@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_winnumber"
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="Hearing" />
+        <!--<item
+            android:id="@+id/nav_Alltickets"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            android:title="QR Scanner" />
+        <item
+            android:id="@+id/nav_Deleted"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Deleted" />-->
+    </group>
+
+    <item android:title="">
+        <menu >
+            <item
+                android:id="@+id/nav_Logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+</menu>

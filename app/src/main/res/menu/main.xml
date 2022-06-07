@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/eleven"
+        android:orderInCategory="100"
+        android:title="2 P.M."
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/four"
+        android:orderInCategory="100"
+        android:title="5 P.M."
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nine"
+        android:orderInCategory="100"
+        android:title="9 P.M."
+        app:showAsAction="never" />
+
+</menu>

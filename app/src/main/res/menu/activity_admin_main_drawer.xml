@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_DailyEntries"
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="Daily Entries" />
+        <item
+            android:id="@+id/nav_WinningNumber"
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="Winning Number" />
+        <item
+            android:id="@+id/nav_CreateUSer"
+            android:icon="@drawable/ic_baseline_supervisor_account_24"
+            android:title="Create User" />
+        <item
+            android:id="@+id/nav_Users"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title="Users" />
+
+        <item
+            android:id="@+id/nav_Statistic"
+            android:icon="@drawable/ic_baseline_bar_chart_24"
+            android:title="Statistics" />
+
+        <item
+            android:id="@+id/nav_Settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+    </group>
+    <item android:title="">
+        <menu >
+            <item
+                android:id="@+id/nav_Logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

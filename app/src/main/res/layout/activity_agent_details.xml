@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AgentDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/backbtn"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:onClick="onBackEmail"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            />
+        <TextView
+            android:id="@+id/agent_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agent Name"
+            android:layout_marginStart="30dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent Activity:"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp">
+            </TextView>
+            <TextView
+                android:id="@+id/recent_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date time"
+                android:textAlignment="center"
+                android:textSize="20dp">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/daily_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Amount Collected (December)"
+            android:textAlignment="center"
+            android:textSize="20dp">
+        </TextView>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="254dp">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly Report"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount Collected"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/bar_chart2"
+            android:layout_width="match_parent"
+            android:layout_height="254dp">
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entries Collected"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp">
+        </TextView>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/bar_chart3"
+            android:layout_width="match_parent"
+            android:layout_height="254dp">
+        </com.github.mikephil.charting.charts.LineChart>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acivities"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp">
+        </TextView>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Entries"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp">
+        </TextView>
+
+            <ListView
+                android:id="@+id/l3view"
+                android:layout_width="match_parent"
+                android:layout_height="504dp">
+
+            </ListView>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
